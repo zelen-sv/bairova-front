@@ -1,29 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <mobmenu/>
+    <page_header/>
+    <navbar/>
     <router-view/>
+    <page_footer/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+
+<script>
+  import mobmenu from '@/components/mobmenu.vue'
+  import page_header  from '@/components/page_header.vue'
+  import navbar  from '@/components/navbar.vue'
+  import page_footer  from '@/components/page_footer.vue'
+
+export default {
+  components: {
+    mobmenu, page_header, navbar, page_footer
   }
 }
+</script>
+
+<style lang="scss">
+  @import "/assets/scss/index.scss";
 </style>

@@ -1,0 +1,219 @@
+.homepage-content {
+	background: linear-gradient(#F6F3F7, #FFF, #FFF);
+	padding: 100px 0 100px;
+	position: relative;
+	@media only screen and (max-width: 768px) {
+		padding-bottom: 60px;
+	}
+}
+
+.homepage-content__wrapper {
+	width: 740px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	@media only screen and (max-width: 768px) {
+		width: 80%;
+	}
+	@media only screen and (min-width: 1150px) {
+		width: 1000px;
+	}
+	@media only screen and (min-width: 2150px) {
+		width: 1250px;
+	}
+}
+
+/*.homepage-content__animation {
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	width: 800px;
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}*/
+
+.homepage-content__line {
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	@media only screen and (max-width: 768px) {
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.homepage-content__item {
+	margin: 10px;
+	background-size: cover;
+	background-position: center;
+	height: 226px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	&:before {
+		content: '';
+		background: rgba(#FFF, 0.8);
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		transition-property: top, opacity;
+		transition-duration: 0.3s;
+		@media only screen and (max-width: 768px) {
+			opacity: 1;
+			background: rgba(#FFF, 0.6);
+		}
+	}
+	&:focus,
+	&:hover {
+		&:before,
+		span {
+			opacity: 1;
+		}
+		span {
+			top: 0;
+		}
+		.homepage-content__item-header {
+			transition-delay: 0.10s;
+		}
+		.homepage-content__item-text {
+			transition-delay: 0.20s;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		width: 290px;
+	}
+	@media only screen and (min-width: 1150px) {
+		height: 314px;
+	}
+}
+
+.homepage-content__item-details {
+	font-size: 16px;
+	color: $violet;
+	span {
+		display: block;
+		opacity: 0;
+		position: relative;
+		top: 100px;
+		transition-property: top, opacity;
+		transition-duration: 0.3s;
+		transition-delay: 0s;
+		@media only screen and (max-width: 768px) {
+			top: 0;
+			opacity: 1;
+		}
+	}
+	.homepage-content__item-header {
+		line-height: 1.5;
+		font-weight: 600;
+		font-size: 22px;
+		@media only screen and (min-width: 2150px) {
+			font-size: 28px;
+		}
+	}
+	.homepage-content__item-text {
+		line-height: 2;
+		margin-top: 5px;
+		font-size: 16px;
+		@media only screen and (min-width: 2150px) {
+			font-size: 20px;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		color: darken($violet, 15%);
+	}
+}
+
+.homepage-content__item--batik {
+	flex-grow: 1.5;
+	background-image: url(../../public/img/homepage-batik.jpg);
+	@media only screen and (max-width: 768px) {
+		flex-grow: 0;
+	}
+}
+
+.homepage-content__item--graphic {
+	flex-grow: 1;
+	background-image: url(../../public/img/homepage-free.jpg);
+	@media only screen and (max-width: 768px) {
+		flex-grow: 0;
+	}
+}
+
+.homepage-content__item--academic {
+	width: 226px;
+	height: 226px;
+	flex: none;
+	background-image: url(../../public/img/homepage-risunok.png);
+	&:before {
+		border-radius: 47%;
+	}
+	@media only screen and (max-width: 768px) {
+		height: 290px;
+		width: 290px;
+	}
+	@media only screen and (min-width: 1150px) {
+		width: 314px;
+		height: 314px;
+	}
+}
+
+.homepage-content__item--pupil {
+	flex-grow: 2;
+	background-image: url(../../public/img/homepage-grafika.jpg);
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.homepage-content__item--oil {
+	flex-grow: 2;
+	background-image: url(../../public/img/homepage-oil2.jpg);
+	@media only screen and (max-width: 768px) {
+		flex-grow: 0;
+	}
+}
+
+.homepage-content__item--painting {
+	flex-grow: 1;
+	background-image: url(../../public/img/homepage-oil3.jpg);
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.homepage-content__item--teaching {
+	flex-grow: 1;
+	background-image: url(../../public/img/homepage-study.jpg);
+	@media only screen and (max-width: 768px) {
+		flex-grow: 0;
+	}
+}
+
+.homepage-content__poem {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.homepage-content__text {
+	width: 300px;
+	margin-bottom: 30px;
+	@media only screen and (min-width: 2150px) {
+		width: 400px;
+	}
+}
