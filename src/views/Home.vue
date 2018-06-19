@@ -61,8 +61,3 @@
 	</main>
 
 </template>
-
-<style lang="scss">
-  @import "../assets/scss/variables/colors";
-  @import "../assets/scss/pages/homepage-content.scss";
-</style>

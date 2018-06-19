@@ -135,7 +135,7 @@
 
 .homepage-content__item--batik {
 	flex-grow: 1.5;
-	background-image: url(../../public/img/homepage-batik.jpg);
+	background-image: url(../public/img/homepage-batik.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}
@@ -143,7 +143,7 @@
 
 .homepage-content__item--graphic {
 	flex-grow: 1;
-	background-image: url(../../public/img/homepage-free.jpg);
+	background-image: url(../public/img/homepage-free.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}
@@ -153,7 +153,7 @@
 	width: 226px;
 	height: 226px;
 	flex: none;
-	background-image: url(../../public/img/homepage-risunok.png);
+	background-image: url(../public/img/homepage-risunok.png);
 	&:before {
 		border-radius: 47%;
 	}
@@ -169,7 +169,7 @@
 
 .homepage-content__item--pupil {
 	flex-grow: 2;
-	background-image: url(../../public/img/homepage-grafika.jpg);
+	background-image: url(../public/img/homepage-grafika.jpg);
 	@media only screen and (max-width: 768px) {
 		display: none;
 	}
@@ -177,7 +177,7 @@
 
 .homepage-content__item--oil {
 	flex-grow: 2;
-	background-image: url(../../public/img/homepage-oil2.jpg);
+	background-image: url(../public/img/homepage-oil2.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}
@@ -185,7 +185,7 @@
 
 .homepage-content__item--painting {
 	flex-grow: 1;
-	background-image: url(../../public/img/homepage-oil3.jpg);
+	background-image: url(../public/img/homepage-oil3.jpg);
 	@media only screen and (max-width: 768px) {
 		display: none;
 	}
@@ -193,7 +193,7 @@
 
 .homepage-content__item--teaching {
 	flex-grow: 1;
-	background-image: url(../../public/img/homepage-study.jpg);
+	background-image: url(../public/img/homepage-study.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}
