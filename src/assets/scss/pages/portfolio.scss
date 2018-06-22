@@ -1,6 +1,6 @@
 .portfolio-content {
 	background: linear-gradient(#F6F3F7, #FFF, #FFF);
-	padding: 100px 0;
+	padding: 120px 0;
 	position: relative;
 	@media only screen and (max-width: 768px) {
 		padding: 50px 0;
@@ -12,6 +12,9 @@
 	margin: 0 auto;
 	position: relative;
 	display: flex;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 	@media only screen and (min-width: 1150px) {
 		width: 1000px;
 	}
@@ -28,11 +31,27 @@
 .portfolio-content__nav {
 	padding: 0;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .portfolio-content__nav-item {
+	margin-left: 70px;
+	margin-bottom: 35px;
 	a {
 		text-transform: uppercase;
+		font-size: 15px;
+		color: #746983;
+	}
+}
+
+.portfolio-content__nav-item--active {
+	a {
+		color: $violet;
+		font-weight: 600;
+	}
+	&:before{
+		content: url(../public/img/drop.svg);
 	}
 }
 
@@ -40,12 +59,20 @@
 	display: flex;
 	flex-direction: column;
 	color: #746983;
+	margin: 60px 0;
 	p {
 		text-align: center;
 	}
 }
 
+.portfolio-content__contacts-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .portfolio-content__phone, .portfolio-content__mail {
+	width: 200px;
 	display: flex;
 	img {
 		width: 25px;
@@ -61,4 +88,11 @@
 
 .portfolio-content__gallery {
 	flex-grow: 1;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-content__gallery-item {
+	margin: 0 12px 44px 12px;
 }
