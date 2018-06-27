@@ -9,7 +9,9 @@
         <router-link to="/portfolio" tag="li" class="navbar__item">
           <a>Портфолио</a>
         </router-link>
-        <li class="navbar__item"><a href="#">Обучение</a></li>
+        <router-link to="/education" tag="li" class="navbar__item">
+          <a>Обучение</a>
+        </router-link>
         <li class="navbar__item"><a href="#">О художнике</a></li>
         <li class="navbar__item"><a href="#">Контакты</a></li>
         <li class="navbar__item"><a href="#">События</a></li>
