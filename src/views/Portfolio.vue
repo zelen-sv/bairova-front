@@ -1,21 +1,19 @@
 <template>
   <main class="portfolio-content">
   	<div class="portfolio-content__wrapper">
-
-  		<portfolio_sidebar/>
-      <portfolio_works/>
-
+  		<portfolio-sidebar/>
+      <portfolio-works/>
   	</div>
   </main>
 </template>
 
 <script>
-  import portfolio_sidebar from '@/components/portfolio_sidebar.vue'
-  import portfolio_works from '@/components/portfolio_works.vue'
+  import PortfolioSidebar from '@/components/PortfolioSidebar.vue'
+  import PortfolioWorks from '@/components/PortfolioWorks.vue'
 
   export default {
     components: {
-      portfolio_sidebar, portfolio_works
+      PortfolioSidebar, PortfolioWorks
     }
   }
 </script>

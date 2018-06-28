@@ -8,7 +8,7 @@
   import request from '@/utils/axios_request'
 
   export default {
-    name: 'portfolio_works',
+    name: 'PortfolioWorks',
     data () {
       return {
         works: []

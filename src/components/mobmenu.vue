@@ -9,6 +9,9 @@
         <router-link to="/portfolio" class="mobmenu__item" tag="li">
           <span>Портфолио</span>
         </router-link>
+        <router-link to="/education" class="mobmenu__item" tag="li">
+          <span>Обучение</span>
+        </router-link>
         <li class="mobmenu__item"><span href="#">Обучение</span></li>
         <li class="mobmenu__item"><span href="#">О художнике</span></li>
         <li class="mobmenu__item"><span href="#">Контакты</span></li>
@@ -21,6 +24,6 @@
 
 <script>
 export default {
-  name: 'mobmenu'
+  name: 'MobMenu'
 }
 </script>

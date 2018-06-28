@@ -40,6 +40,6 @@
 
 <script>
 export default {
-  name: 'page_footer'
+  name: 'PageHeader'
 }
 </script>

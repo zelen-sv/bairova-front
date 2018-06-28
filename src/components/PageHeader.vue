@@ -25,6 +25,6 @@
 
 <script>
 export default {
-  name: 'page_header'
+  name: 'PageHeader'
 }
 </script>
