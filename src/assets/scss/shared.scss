@@ -1,0 +1,73 @@
+.gallery {
+
+}
+
+.gallery__item {
+	float: left;
+	margin:1.66%;
+	margin-top: 0;
+	cursor: pointer;
+	width: 30%;
+	padding-bottom: 30%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	@media only screen and (max-width: 768px) {
+		width: 90%;
+		padding-bottom: 90%;
+		margin: 5%;
+	}
+}
+
+.sidebar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100%;
+	width: 20%;
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		position: static;
+	}
+}
+
+.sidebar__nav {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	@media only screen and (max-width: 768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+}
+
+.sidebar__item {
+	margin-left: 70px;
+	margin-bottom: 35px;
+	a {
+		text-transform: uppercase;
+		font-size: 15px;
+		color: #746983;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-left: 0;
+		width: 50%;
+	}
+}
+
+.sidebar__item.router-link-exact-active {
+	color: $violet;
+	a {
+		color: $violet;
+		font-weight: 600;
+		position: relative;
+		&:before {
+			content: url(/img/dot.svg);
+			position: absolute;
+			left: -10px;
+			bottom: 3px;
+		}
+	}
+}

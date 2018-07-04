@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Portfolio from './views/Portfolio.vue'
 import Education from './views/Education.vue'
 
+import PortfolioWorks from './components/PortfolioWorks.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -15,9 +17,34 @@ export default new Router({
       component: Home
     },
     {
-      path: '/portfolio/:type',
-      name: 'portfolio',
-      component: Portfolio
+      path: '/portfolio',
+      component: Portfolio,
+      children: [
+        { path: '',
+          component: PortfolioWorks,
+          name: 'batik',
+          props: { category: 'batik' } },
+        { path: 'painting',
+          component: PortfolioWorks,
+          name: 'painting',
+          props: { category: 'painting' } },
+        { path: 'watercolor',
+          component: PortfolioWorks,
+          name: 'watercolor',
+          props: { category: 'watercolor' } },
+        { path: 'graphic_arts',
+          component: PortfolioWorks,
+          name: 'graphic_arts',
+          props: { category: 'graphic_arts' } },
+        { path: 'illustration',
+          component: PortfolioWorks,
+          name: 'illustration',
+          props: { category: 'illustration' } },
+        { path: 'design',
+          component: PortfolioWorks,
+          name: 'design',
+          props: { category: 'design' } },
+      ]
     },
     {
       path: '/education',

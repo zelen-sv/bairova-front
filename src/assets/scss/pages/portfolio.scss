@@ -1,6 +1,5 @@
 .portfolio-content {
 	background: linear-gradient(#F6F3F7, #FFF, #FFF);
-	padding: 120px 0;
 	position: relative;
 	@media only screen and (max-width: 768px) {
 		padding: 50px 0;
@@ -10,8 +9,8 @@
 .portfolio-content__wrapper {
 	width: 85%;
 	margin: 0 auto;
-	position: relative;
 	display: flex;
+	justify-content: space-between;
 	@media only screen and (max-width: 768px) {
 		flex-direction: column;
 	}
@@ -24,48 +23,18 @@
 }
 
 .portfolio-content__sidebar {
-	flex-basis: 250px;
-  flex-shrink: 0;
-}
-
-.portfolio-content__nav {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
+	padding: 120px 0;
 	@media only screen and (max-width: 768px) {
-		flex-direction: row;
-		flex-wrap: wrap;
-		text-align: center;
+		padding: 60px 0;
 	}
 }
 
-.portfolio-content__nav-item {
-	margin-left: 70px;
-	margin-bottom: 35px;
-	a {
-		text-transform: uppercase;
-		font-size: 15px;
-		color: #746983;
-	}
+.portfolio-content__gallery {
+	padding: 120px 0;
+	width: 75%;
 	@media only screen and (max-width: 768px) {
-		margin-left: 0;
-		width: 50%;
-	}
-}
-
-.portfolio-content__nav-item--active {
-	color: $violet;
-	a {
-		color: $violet;
-		font-weight: 600;
-		position: relative;
-		&:before {
-			content: url(../public/img/dot.svg);
-			position: absolute;
-			left: -10px;
-			bottom: 3px;
-		}
+		padding: 0;
+		width: 100%;
 	}
 }
 
@@ -103,13 +72,7 @@
 	margin-bottom: 20px;
 }
 
-.portfolio-content__gallery {
-	flex-grow: 1;
-	display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.portfolio-content__gallery-item {
-	margin: 0 12px 44px 12px;
+.portfolio__spinner {
+	width: 100%;
+	margin-left: 40%;
 }

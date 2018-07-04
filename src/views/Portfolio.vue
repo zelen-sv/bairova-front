@@ -2,7 +2,7 @@
   <main class="portfolio-content">
   	<div class="portfolio-content__wrapper">
   		<portfolio-sidebar/>
-      <portfolio-works/>
+      <router-view/>
   	</div>
   </main>
 </template>
@@ -17,4 +17,3 @@
     }
   }
 </script>
-

@@ -1,0 +1,15 @@
+.work-fade-enter, .work-fade-leave, .work-fade-leave-active {
+   opacity: 0;
+}
+
+.work-fade-enter-active  {
+  transition: opacity .5s ease
+}
+
+.modal-fade-enter, .modal-fade-leave, .modal-fade-leave-active {
+   opacity: 0;
+}
+
+.modal-fade-enter-active  {
+  transition: opacity .5s ease
+}

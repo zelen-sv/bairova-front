@@ -8,7 +8,12 @@
 @import "mobmenu";
 @import "navbar";
 @import "footer";
+@import "modal";
 
 // Pages
 @import "pages/homepage-content";
 @import "pages/portfolio";
+
+// Shared
+@import "transition";
+@import "shared"
