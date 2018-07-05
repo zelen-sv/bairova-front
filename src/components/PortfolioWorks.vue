@@ -5,9 +5,9 @@
     </div>
     <transition-group name="work-fade">
       <div v-show="!loading"
-           v-for="work in works"
+           v-for="(work, index) in works"
            :key="work.id"
-           @click="openPictureModal();setCurrentPortfolioWork(work);"
+           @click="openWorksCarausel(index);"
            :style="{ backgroundImage: `url(${work.picture.url})` }"
            class="gallery__item">
       </div>
@@ -59,11 +59,8 @@
           this.loading = false
         })
       },
-      openPictureModal () {
-        EventHub.$emit('showModal', 'PortfolioWork');
-      },
-      setCurrentPortfolioWork (work) {
-        EventHub.$emit('setCurrentPortfolioWork', work);
+      openWorksCarausel (index) {
+        EventHub.$emit('openCarausel', 'PortfolioWork', this.works, index);
       }
     }
   }
