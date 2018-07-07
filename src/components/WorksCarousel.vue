@@ -41,7 +41,7 @@ export default {
   watch: {
     visible () {
       let body  = document.getElementsByTagName('body')[0]
-      this.visible ? body.classList.add("modal") : body.classList.remove("modal")
+      this.visible ? body.classList.add("disable-scroll-modal") : body.classList.remove("disable-scroll-modal")
     }
   },
   methods: {

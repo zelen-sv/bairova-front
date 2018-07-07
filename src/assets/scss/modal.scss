@@ -16,8 +16,14 @@
   overflow-x: auto;
   display: flex;
   flex-direction: column;
+  width: 65%;
+  height: 80vh;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    height: 75vh;
+  }
 }
 
-body.modal {
-    overflow: hidden;
+.disable-scroll-modal {
+  overflow: hidden;
 }

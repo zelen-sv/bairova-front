@@ -203,11 +203,8 @@ $color-lite: lighten($color, 10%);
   color: white;
   font-size: 15px;
   text-transform: uppercase;
-  @media only screen and (min-width: 400px) {
-    font-size: 20px;
-  }
   @media only screen and (min-width: 599px) {
-    font-size: 22px;
+    font-size: 17px;
   }
 }
 
@@ -215,12 +212,8 @@ $color-lite: lighten($color, 10%);
   margin-top: 30px;
   padding: 15px 20px;
   font-size: 18px;
-  @media only screen and (min-width: 400px) {
-    font-size: 22px;
-    padding: 20px 30px;
-  }
   @media only screen and (min-width: 599px) {
-    font-size: 24px;
+    font-size: 20px;
     padding: 30px 35px;
   }
 }
