@@ -1,4 +1,4 @@
-<template v-if="visible">
+<template>
   <transition name="modal-fade" v-if="visible">
     <div class="modal-backdrop" role="dialog" @click.self.prevent="close">
       <div class="modal" ref="modal">
