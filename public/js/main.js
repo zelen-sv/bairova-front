@@ -6,6 +6,10 @@ $( document ).ready(function() {
     $('body').toggleClass('open');
   });
 
+  $('.mobmenu__item').on('click', function(){
+    $('body').toggleClass('open');
+  });
+
   // When the user scrolls the page, execute myFunction
 	window.onscroll = function() {myFunction()};
 

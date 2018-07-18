@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <mobmenu/>
-    <page_header/>
+    <mob-menu/>
+    <page-header/>
     <navbar/>
     <router-view/>
-    <page_footer/>
+    <page-footer/>
+    <works-carousel/>
   </div>
 </template>
 
 
 <script>
-  import mobmenu from '@/components/mobmenu.vue'
-  import page_header  from '@/components/page_header.vue'
-  import navbar  from '@/components/navbar.vue'
-  import page_footer  from '@/components/page_footer.vue'
+  import MobMenu from '@/components/MobMenu.vue'
+  import PageHeader  from '@/components/PageHeader.vue'
+  import Navbar  from '@/components/Navbar.vue'
+  import PageFooter from '@/components/PageFooter.vue'
+  import WorksCarousel from '@/components/WorksCarousel.vue'
 
 export default {
   components: {
-    mobmenu, page_header, navbar, page_footer
+    MobMenu, PageHeader, Navbar, PageFooter, WorksCarousel
   }
 }
 </script>

@@ -3,11 +3,15 @@
 **Start project**
 
 1. Install dependencies:
-```js
+```bash
 npm i
 ```
-1. To start the development server, run:
-```js
+2. Create env file '.env.local' in root directory with text:
+```ruby
+VUE_APP_API_URL=http://localhost:3000
+```
+3. To start the development server, run:
+```bash
 npm run serve
 ```
 

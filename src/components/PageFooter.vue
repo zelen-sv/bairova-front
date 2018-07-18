@@ -5,11 +5,11 @@
       <div class="footer__contacts">
         <div class="footer__mini-wrapper">
           <div class="footer__phone">
-            <img src="img/phone.svg">
+            <img src="/img/phone.svg">
             <p class="footer__phone-number">+375 29 509 10 17 <span class="footer__messengers">(Viber, Telegram)</span></p>
           </div>
           <div class="footer__mail">
-            <img src="img/mail.svg">
+            <img src="/img/mail.svg">
             <p>degtyar.ana@mail.ru</p>
           </div>
         </div>
@@ -17,8 +17,8 @@
 
       <div class="footer__artist">
         <div class="footer__mini-wrapper">
-          <img src="img/artist-name.svg" class="footer__name">
-          <div class="footer__social"><img src="img/vk-footer.svg"><img src="img/insta-footer.svg"><img src="img/fbook-footer.svg"></div>
+          <img src="/img/artist-name.svg" class="footer__name">
+          <div class="footer__social"><img src="/img/vk-footer.svg"><img src="/img/insta-footer.svg"><img src="/img/fbook-footer.svg"></div>
         </div>
       </div>
 
@@ -40,6 +40,6 @@
 
 <script>
 export default {
-  name: 'page_footer'
+  name: 'PageHeader'
 }
 </script>

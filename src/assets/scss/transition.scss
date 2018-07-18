@@ -1,0 +1,6 @@
+.modal-fade-enter-active, .modal-fade-leave-active {
+  transition: opacity .4s ease;
+}
+.modal-fade-enter, .modal-fade-leave-to {
+  opacity: 0;
+}

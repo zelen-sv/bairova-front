@@ -12,7 +12,6 @@
         <router-link to="/education" class="mobmenu__item" tag="li">
           <span>Обучение</span>
         </router-link>
-        <li class="mobmenu__item"><span href="#">Обучение</span></li>
         <li class="mobmenu__item"><span href="#">О художнике</span></li>
         <li class="mobmenu__item"><span href="#">Контакты</span></li>
         <li class="mobmenu__item"><span href="#">События</span></li>
@@ -24,6 +23,6 @@
 
 <script>
 export default {
-  name: 'mobmenu'
+  name: 'MobMenu'
 }
 </script>
