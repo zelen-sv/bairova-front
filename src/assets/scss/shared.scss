@@ -31,7 +31,7 @@
 	position: sticky;
 	top: 0;
 	height: 100%;
-	width: 20%;
+	width: 25%;
 	@media only screen and (max-width: 768px) {
 		width: 100%;
 		position: static;
@@ -51,7 +51,7 @@
 }
 
 .sidebar__item {
-	margin-left: 70px;
+	margin-left: 50px;
 	margin-bottom: 28px;
 	a {
 		text-transform: uppercase;
@@ -79,5 +79,14 @@
 			left: -10px;
 			bottom: 3px;
 		}
+	}
+}
+
+.sidebar__button {
+	padding: 15px 25px;
+  	font-size: 17px;
+  	margin-top: 20px;
+  	@media only screen and (max-width: 768px) {
+		display: none;
 	}
 }

@@ -1,0 +1,66 @@
+.education-content {
+	background: linear-gradient(#F6F3F7, #FFF, #FFF);
+	position: relative;
+	@media only screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+}
+
+.education-content__wrapper {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 1150px) {
+		width: 1000px;
+	}
+	@media only screen and (min-width: 2150px) {
+		width: 1250px;
+	}
+}
+
+.education-content__sidebar {
+	padding: 120px 0;
+	@media only screen and (max-width: 768px) {
+		padding: 60px 0;
+	}
+}
+
+.education-content__information {
+	padding: 120px 0;
+  width: 75%;
+  @media only screen and (max-width: 768px) {
+  	padding: 0;
+  	width: 100%;
+  }
+}
+
+.individual-page__introduction {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.individual-page__main-image {
+	order: 1;
+	flex-grow: 0;
+	padding: 0 15px;
+}
+
+.individual-page__main-info {
+	order: 0;
+	flex-grow: 1;
+	padding: 0 15px;
+	text-align: center;
+}
+
+.individual-page__text {
+	p {
+		margin: 0;
+	}
+	img {
+		margin-top: 15px;
+	}
+}
