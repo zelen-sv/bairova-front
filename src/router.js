@@ -6,6 +6,11 @@ import Education from './views/Education.vue'
 
 import PortfolioWorks from './components/PortfolioWorks.vue'
 
+import Lessons from './components/Lessons.vue'
+import StudioFloria from './components/StudioFloria.vue'
+import Training from './components/Training.vue'
+import StudentWorks from './components/StudentWorks.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -48,8 +53,21 @@ export default new Router({
     },
     {
       path: '/education',
-      name: 'education',
-      component: Education
+      component: Education,
+      children: [
+        { path: '',
+          component: Lessons,
+          name: 'lessons' },
+        { path: 'studio_floria',
+          component: StudioFloria,
+          name: 'studio_floria' },
+        { path: 'training',
+          component: Training,
+          name: 'training' },
+        { path: 'student_works',
+          component: StudentWorks,
+          name: 'student_works' },
+      ]
     }
   ]
 })
