@@ -1,3 +1,6 @@
+
+/*Common*/
+
 .education-content {
 	background: linear-gradient(#F6F3F7, #FFF, #FFF);
 	position: relative;
@@ -22,6 +25,22 @@
 	}
 }
 
+.main-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 1250px) {
+		width: 1250px;
+	}
+	@media only screen and (min-width: 2150px) {
+		width: 1550px;
+	}
+}
+
 .education-content__sidebar {
 	padding: 120px 0;
 	display: flex;
@@ -29,11 +48,6 @@
 	@media only screen and (max-width: 768px) {
 		padding: 40px 0;
 	}
-}
-
-.sidebar__button {
-	width: 80%;
-  align-self: center;
 }
 
 .education-content__information {
@@ -45,7 +59,7 @@
   }
 }
 
-.individual-page__introduction {
+.ed-introduction {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row-reverse;
@@ -55,10 +69,10 @@
 	}
 }
 
-.individual-page__main-image {
+.ed-main-image {
 	padding: 0 15px;
-	background-image: url(/img/individual-main-image.jpg);
 	background-size: cover;
+	background-position: center;
 	width: 45%;
 	@media only screen and (max-width: 1024px) {
 		width: 40%;
@@ -70,7 +84,7 @@
 	}
 }
 
-.individual-page__main-info {
+.ed-main-info {
 	text-align: center;
 	padding: 0 15px 0 0;
 	width: 55%;
@@ -84,37 +98,16 @@
 	}
 }
 
-.individual-page__text {
+.ed-text {
 	p {
-		margin: 0;
+		margin: 0 0 15px 0;
 	}
 	img {
-		margin-top: 15px;
 		opacity: 0.8;
 	}
 }
 
-.individual-page__art-types {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.individual-page__art-types-header {
-	color: $accent;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
-.individual-page__list {
-	list-style-type: disc;
-	text-align: left;
-	margin: 0;
-}
-
-.individual-page__list-item {
-	margin-top: 10px;
-}
+/*Artblock*/
 
 .artblock {
 	border: 1px solid rgba(#746983, 0.3);
@@ -146,6 +139,56 @@
 	}
 }
 
+.artblock__description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 30px 0;
+	text-align: center;
+	@media only screen and (min-width: 2150px) {
+		padding: 40px 60px 0;
+	}
+}
+
+.artblock__text {
+	color: #746983;
+	@media only screen and (min-width: 2150px) {
+		font-size: 18px;
+		margin: auto 0;
+	}
+}
+
+/*Art-types*/
+
+.art-types {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 13px;
+}
+
+.art-types__header {
+	color: $accent;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.art-types__list {
+	list-style-type: disc;
+	text-align: left;
+	margin: 0;
+}
+
+.art-types__list-item {
+	margin-top: 10px;
+}
+
+/*Individual page*/
+
+.individual-page__main-image {
+	background-image: url(/img/individual-main-image.jpg);
+}
+
 .individual-page__firstblock .artblock__image {
 	background-image: url(/img/batikimage.png);
 }
@@ -170,22 +213,19 @@
 	background-image: url(/img/sand.jpg);
 }
 
+/*StudioFloria*/
 
-.artblock__description {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px 30px 0;
-	text-align: center;
-	@media only screen and (min-width: 2150px) {
-		padding: 40px 60px 0;
+.floria-page__main-image {
+	background-image: url(/img/floria.jpg);
+}
+
+.floria-page__address {
+	padding-bottom: 15px;
+	font-weight: 600;
+	img {
+		margin: 0 8px 0 0;
 	}
 }
 
-.artblock__text {
-	color: #746983;
-	@media only screen and (min-width: 2150px) {
-		font-size: 18px;
-		margin: auto 0;
-	}
+.floria-page__money {
 }

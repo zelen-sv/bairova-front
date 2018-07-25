@@ -1,6 +1,6 @@
 <template>
 	<main class="education-content">
-		<div class="education-content__wrapper">
+		<div class="education-content__wrapper main-wrapper">
 			<education-sidebar/>
 			<router-view/>
 		</div>

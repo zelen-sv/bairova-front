@@ -14,6 +14,6 @@
         <a>Работы учеников</a>
       </router-link>
     </ul>
-    <button class="sidebar__button request-button"><img src="/img/ic-palette.svg">Обучение</button>
+    <button class="sidebar__button request-button"><img src="/img/ic-palette.svg">Заявка</button>
   </div>
 </template>
