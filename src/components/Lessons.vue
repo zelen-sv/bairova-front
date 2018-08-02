@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="individual-page__firstblock artblock">
+    <div class="individual-page__firstblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/batiktitle.svg" class="artblock__title">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="individual-page__secondblock artblock">
+    <div class="individual-page__secondblock individual-page__block  artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/paintingtitle.svg" class="artblock__title">
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="individual-page__thirdblock artblock">
+    <div class="individual-page__thirdblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/graphictitle.svg" class="artblock__title">
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="individual-page__fourthblock artblock">
+    <div class="individual-page__fourthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/watercolortitle.svg" class="artblock__title">
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <div class="individual-page__fifthblock artblock">
+    <div class="individual-page__fifthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/chinesetitle.svg" class="artblock__title">
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <div class="individual-page__sixthblock artblock">
+    <div class="individual-page__sixthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/therapytitle.svg" class="artblock__title">

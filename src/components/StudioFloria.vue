@@ -25,6 +25,24 @@
       </div>
 		</div>
 
+		<div class="floria-page__schedule artblock">
+			<div class="floria-page__registration-info"><p>Начало нового учебного года 03.09. Запись открыта!</p></div>
+			<div class="floria-page__day-blocks">
+				<div class="floria-page__day-block">
+					<span class="floria-page__day">Вт</span>
+					<p class="floria-page__time">18:00 - 20:30</p>
+				</div>
+				<div class="floria-page__day-block">
+					<span class="floria-page__day">Вт</span>
+					<p class="floria-page__time">18:00 - 20:30</p>
+				</div>
+				<div class="floria-page__day-block">
+					<span class="floria-page__day">Вт</span>
+					<p class="floria-page__time">18:00 - 20:30</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 </template>

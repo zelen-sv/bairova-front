@@ -94,8 +94,11 @@
 		margin: 0 auto;
 	}
 	@media only screen and (min-width: 2150px) {
-		font-size: 17px;
+		font-size: 19px;
 	}
+	@media only screen and (max-width: 768px) {
+  	font-size: 19px;
+  }
 }
 
 .ed-text {
@@ -114,11 +117,9 @@
 	height: 225px;
 	margin-bottom: 60px;
 	display: flex;
-	flex-wrap: nowrap;
 	@media only screen and (max-width: 768px) {
   	height: auto;
   	flex-direction: column;
-  	border: none;
   }
   @media only screen and (min-width: 2150px) {
 		height: 300px;
@@ -185,6 +186,13 @@
 
 /*Individual page*/
 
+.individual-page__block {
+	flex-wrap: nowrap;
+	@media only screen and (max-width: 768px) {
+		border: none;
+	}
+}
+
 .individual-page__main-image {
 	background-image: url(/img/individual-main-image.jpg);
 }
@@ -228,4 +236,77 @@
 }
 
 .floria-page__money {
+	font-weight: 600;
+}
+
+.floria-page__schedule {
+	background-image: url(/img/floria-background.png);
+	background-position: top left;
+	background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #746983;
+  @media only screen and (max-width: 768px) {
+		padding: 0 15px;
+	}
+}
+
+.floria-page__registration-info {
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	p {
+		margin: 0;
+	}
+	@media only screen and (min-width: 2150px) {
+		font-size: 20px;
+	}
+}
+
+.floria-page__day-blocks {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 30px;
+	@media only screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-top: 15px;
+		margin-bottom: 45px;
+	}
+}
+
+.floria-page__day-block {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	color: $violet;
+	font-size: 17px;
+	margin: 0 15px;
+	@media only screen and (max-width: 865px) {
+		margin: 0 5px;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-top: 20px;
+		font-size: 21px;
+	}
+	@media only screen and (min-width: 2150px) {
+		font-size: 22px;
+	}
+}
+
+.floria-page__day {
+	background-color: $accent;
+	padding: 13px;
+	border-radius: 50%;
+	text-transform: uppercase;
+	margin-right: 6px;
+	@media only screen and (min-width: 2150px) {
+		padding: 20px;
+	}
 }
