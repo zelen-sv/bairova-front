@@ -3,16 +3,14 @@
 
     <div class="carousel__image-part">
       <div class="carousel__image-container">
-        <v-touch tag="img"
-                 :src="work.picture.url"
-                 v-on:swipeleft="$emit('previus')"
-                 v-on:swiperight="$emit('next')"
-                 class="carousel__image"/>
+        <img :src="work.picture.url" class="carousel__image"/>
       </div>
     	<div class="carousel__buttons-container">
         <div class="carousel__buttons">
-          <button @click="$emit('previus')" v-on:swipeleft="$emit('previus')" class="carousel__button carousel__button-prev"></button>
-          <button @click="$emit('next')" v-on:swiperight="$emit('next')" class="carousel__button carousel__button-next"></button>
+          <button @click="$emit('previus')" class="carousel__button carousel__button-prev">
+          </button>
+          <button @click="$emit('next')" class="carousel__button carousel__button-next">
+          </button>
         </div>
       </div>
     </div>
