@@ -1,22 +1,22 @@
 <template>
   <div class="portfolio-content__sidebar sidebar">
     <ul class="sidebar__nav">
-      <router-link to="/portfolio" tag="li" class="sidebar__item">
+      <router-link to="/portfolio#portfolio-content" tag="li" class="sidebar__item">
         <a>Батик</a>
       </router-link>
-      <router-link to="/portfolio/painting" tag="li" class="sidebar__item">
+      <router-link to="/portfolio/painting#portfolio-content" tag="li" class="sidebar__item">
         <a>Живопись</a>
       </router-link>
-      <router-link to="/portfolio/watercolor" tag="li" class="sidebar__item">
+      <router-link to="/portfolio/watercolor#portfolio-content" tag="li" class="sidebar__item">
         <a>Акварель</a>
       </router-link>
-      <router-link to="/portfolio/graphic_arts" tag="li" class="sidebar__item">
+      <router-link to="/portfolio/graphic_arts#portfolio-content" tag="li" class="sidebar__item">
         <a>Графика</a>
       </router-link>
-      <router-link to="/portfolio/illustration" tag="li" class="sidebar__item">
+      <router-link to="/portfolio/illustration#portfolio-content" tag="li" class="sidebar__item">
         <a>Иллюстрация</a>
       </router-link>
-      <router-link to="/portfolio/design" tag="li" class="sidebar__item">
+      <router-link to="/portfolio/design#portfolio-content" tag="li" class="sidebar__item">
         <a>Дизайн</a>
       </router-link>
     </ul>

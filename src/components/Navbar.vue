@@ -6,10 +6,10 @@
         <router-link to="/" tag="li" class="navbar__item">
           <a><img src="/img/LB.svg" class="navbar__home"></a>
         </router-link>
-        <router-link to="/portfolio" tag="li" class="navbar__item">
+        <router-link to="/portfolio#portfolio-content" tag="li" class="navbar__item">
           <a>Портфолио</a>
         </router-link>
-        <router-link to="/education" tag="li" class="navbar__item">
+        <router-link to="/education#education-content" tag="li" class="navbar__item">
           <a>Обучение</a>
         </router-link>
         <li class="navbar__item"><a href="#">О художнике</a></li>

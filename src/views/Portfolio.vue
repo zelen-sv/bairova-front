@@ -1,5 +1,5 @@
 <template>
-  <main class="portfolio-content">
+  <main class="portfolio-content" id="portfolio-content">
   	<div class="portfolio-content__wrapper">
   		<portfolio-sidebar/>
       <router-view/>

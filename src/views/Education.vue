@@ -1,5 +1,5 @@
 <template>
-	<main class="education-content">
+	<main class="education-content" id="education-content">
 		<div class="education-content__wrapper main-wrapper">
 			<education-sidebar/>
 			<router-view/>
