@@ -18,7 +18,7 @@
 	    </div>
 
 	    <div class="homepage-content__line homepage-content__line--second">
-	    	<router-link to="/education/training#education-content" class="homepage-content__item homepage-content__item--academic">
+	    	<router-link to="/education/admission#education-content" class="homepage-content__item homepage-content__item--academic">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Рисунок</span>
 	          <span class="homepage-content__item-text">подготовка к поступлению</span>

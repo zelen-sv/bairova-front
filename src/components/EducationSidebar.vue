@@ -7,7 +7,7 @@
       <router-link to="/education/studio_floria#education-content" tag="li" class="sidebar__item">
         <a>Студия "Флория"</a>
       </router-link>
-      <router-link to="/education/training#education-content" tag="li" class="sidebar__item">
+      <router-link to="/education/admission#education-content" tag="li" class="sidebar__item">
         <a>Подготовка к поступлению</a>
       </router-link>
       <router-link to="/education/student_works#education-content" tag="li" class="sidebar__item">
