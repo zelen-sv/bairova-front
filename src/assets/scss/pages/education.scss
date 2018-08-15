@@ -117,7 +117,7 @@
 	height: 225px;
 	margin-bottom: 60px;
 	display: flex;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1150px) {
   	height: auto;
   	flex-direction: column;
   }
@@ -130,7 +130,7 @@
 	width: 225px;
 	background-size: cover;
 	flex-shrink: 0;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1150px) {
   	height: 225px;
   	align-self: center;
   	margin-top: 20px;
@@ -182,13 +182,14 @@
 
 .art-types__list-item {
 	margin-top: 10px;
+	white-space: nowrap;
 }
 
 /*Individual page*/
 
 .individual-page__block {
 	flex-wrap: nowrap;
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 1150px) {
 		border: none;
 	}
 }
@@ -214,10 +215,14 @@
 }
 
 .individual-page__fifthblock .artblock__image {
-	background-image: url(/img/therapy.jpg);
+	background-image: url(/img/batik.jpg);
 }
 
 .individual-page__sixthblock .artblock__image {
+	background-image: url(/img/therapy.jpg);
+}
+
+.individual-page__seventhblock .artblock__image {
 	background-image: url(/img/intuition.jpg);
 }
 

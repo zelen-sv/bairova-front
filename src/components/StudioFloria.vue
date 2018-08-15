@@ -13,13 +13,14 @@
           <img src="/img/element02.svg">
         </div>
         <div class="floria-page__art-types art-types">
-          <h4 class="art-types__header">Наши направления:</h4>
+          <h4 class="art-types__header">Направления обучения:</h4>
           <ul class="art-types__list">
-            <li class="art-types__list-item">Батик (ручная роспись по шелку)</li>
-            <li class="art-types__list-item">Живопись (масло, акрил)</li>
-            <li class="art-types__list-item">Графика (карандаш, уголь)</li>
-            <li class="art-types__list-item">Акварель</li>
-            <li class="art-types__list-item">Арт-терапия (пескография,роспись по воде)</li>
+            <li class="art-types__list-item">Основы композиции</li>
+            <li class="art-types__list-item">Живопись</li>
+            <li class="art-types__list-item">Графика</li>
+            <li class="art-types__list-item">Батик</li>
+            <li class="art-types__list-item">Арт-терапия</li>
+            <li class="art-types__list-item">Интуитивное рисование</li>
           </ul>
         </div>
       </div>

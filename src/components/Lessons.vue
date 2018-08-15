@@ -15,6 +15,7 @@
             <li class="art-types__list-item">Основы композиции</li>
             <li class="art-types__list-item">Живопись</li>
             <li class="art-types__list-item">Графика</li>
+            <li class="art-types__list-item">Академический рисунок</li>
             <li class="art-types__list-item">Батик</li>
             <li class="art-types__list-item">Арт-терапия</li>
             <li class="art-types__list-item">Интуитивное рисование</li>
@@ -50,12 +51,20 @@
     <div class="individual-page__fourthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
+        <img src="/img/academtitle.svg" class="artblock__title">
+        <p class="artblock__text">...</p>
+      </div>
+    </div>
+
+    <div class="individual-page__fifthblock individual-page__block artblock">
+      <div class="artblock__image"></div>
+      <div class="artblock__description">
         <img src="/img/batiktitle.svg" class="artblock__title">
         <p class="artblock__text">Батик – это очень древний восточный способ украшения ткани, который сохранил свои традиции. А в наше время появились все необходимые инструменты и материалы, поэтому овладеть техникой ручной росписи ткани может каждый. Это процесс творческой медитации, в результате которой создаются неповторимые картины, элементы интерьера и даже авторская одежда!</p>
       </div>
     </div>
 
-    <div class="individual-page__fifthblock individual-page__block artblock">
+    <div class="individual-page__sixthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/therapytitle.svg" class="artblock__title">
@@ -63,12 +72,13 @@
       </div>
     </div>
 
-    <div class="individual-page__sixthblock individual-page__block artblock">
+    <div class="individual-page__seventhblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/intuitiontitle.svg" class="artblock__title">
         <p class="artblock__text">Это выражение своих чувств и внутренних ощущений любыми техниками и художественными материалами. Создавая полотно своего эмоционального внутреннего мира, осознаёшь свою уникальность.</p>
       </div>
     </div>
+
   </div>
 </template>
