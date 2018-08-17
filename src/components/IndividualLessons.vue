@@ -5,17 +5,18 @@
       <div class="individual-page__main-image ed-main-image"></div>
       <div class="individual-page__main-info ed-main-info">
         <div class="individual-page__text ed-text">
+          <p>В зависимости от пожеланий формируются индивидуальные занятия, которые могут состоять из разных  художественных направлений.</p>
           <p>Lorem ipsum dolor sit amet, justo definitiones comprehensam mel ut. Velit gubergren ad qui. No veri movet euripidis vel. No impetus ornatus postulant pro, et agam phaedrum has, at vidit conceptam sit.</p>
-          <p>Lorem ipsum dolor sit amet, justo definitiones comprehensam mel ut. Velit gubergren ad qui. No veri movet euripidis vel. No impetus ornatus postulant pro, et agam phaedrum has, at vidit conceptam sit.</p>
+          <p class="individual-page__text-bonus">Первое занятие (тестирование способностей и знакомство) - БЕСПЛАТНО!</p>
           <img src="/img/element02.svg">
         </div>
         <div class="individual-page__art-types art-types">
           <h4 class="art-types__header">Направления обучения:</h4>
           <ul class="art-types__list">
             <li class="art-types__list-item">Основы композиции</li>
+            <li class="art-types__list-item">Академический рисунок</li>
             <li class="art-types__list-item">Живопись</li>
             <li class="art-types__list-item">Графика</li>
-            <li class="art-types__list-item">Академический рисунок</li>
             <li class="art-types__list-item">Батик</li>
             <li class="art-types__list-item">Арт-терапия</li>
             <li class="art-types__list-item">Интуитивное рисование</li>
@@ -32,7 +33,15 @@
       </div>
     </div>
 
-    <div class="individual-page__secondblock individual-page__block  artblock">
+    <div class="individual-page__secondblock individual-page__block artblock">
+      <div class="artblock__image"></div>
+      <div class="artblock__description">
+        <img src="/img/academtitle.svg" class="artblock__title">
+        <p class="artblock__text">Является базовой дисциплиной для всех изобразительных искусств. Это художественная грамота позволяющая правильно видеть объективную реальность, обучает действенным правилам и способам её изображения.</p>
+      </div>
+    </div>
+
+    <div class="individual-page__thirdblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/paintingtitle.svg" class="artblock__title">
@@ -40,19 +49,11 @@
       </div>
     </div>
 
-    <div class="individual-page__thirdblock individual-page__block artblock">
+    <div class="individual-page__fourthblock individual-page__block artblock">
       <div class="artblock__image"></div>
       <div class="artblock__description">
         <img src="/img/graphictitle.svg" class="artblock__title">
         <p class="artblock__text">Точка, линия, пятно, штрих – вот из чего состоит твой карандашный рисунок. И это уже графика, вид изобразительного искусства, включающий рисунок и печатные художественные изображения.В современных условиях, благодаря компьютерной графике и полиграфии, она получила широкое распространение ( книжные иллюстрации, товарные знаки, плакаты и др.)</p>
-      </div>
-    </div>
-
-    <div class="individual-page__fourthblock individual-page__block artblock">
-      <div class="artblock__image"></div>
-      <div class="artblock__description">
-        <img src="/img/academtitle.svg" class="artblock__title">
-        <p class="artblock__text">...</p>
       </div>
     </div>
 
