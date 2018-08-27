@@ -5,8 +5,9 @@
       <div class="individual-page__main-image ed-main-image"></div>
       <div class="individual-page__main-info ed-main-info">
         <div class="individual-page__text ed-text">
-          <p>В зависимости от пожеланий формируются индивидуальные занятия, которые могут состоять из разных  художественных направлений.</p>
-          <p>Lorem ipsum dolor sit amet, justo definitiones comprehensam mel ut. Velit gubergren ad qui. No veri movet euripidis vel. No impetus ornatus postulant pro, et agam phaedrum has, at vidit conceptam sit.</p>
+          <p class="floria-page__address"><img src="/img/ic-address.svg">10 минут от ст.м. Парк Челюскинцев</p>
+          <p>В зависимости от пожеланий и предпочтений индивидуальные занятия ( от 1 до 4 чел.) проходят в согласованном графике и могут сочетать как одно выбранное направление, так и несколько: рисунок и живопись; батик и пескография и др.</p>
+          <p>Индивидуальные занятия в творческой мастерской - это сочетание приятного с полезным, всегда много внимания и уютная атмосфера.</p>
           <p class="individual-page__text-bonus">Первое занятие (тестирование способностей и знакомство) - БЕСПЛАТНО!</p>
           <img src="/img/element02.svg">
         </div>
@@ -79,6 +80,12 @@
         <img src="/img/intuitiontitle.svg" class="artblock__title">
         <p class="artblock__text">Это выражение своих чувств и внутренних ощущений любыми техниками и художественными материалами. Создавая полотно своего эмоционального внутреннего мира, осознаёшь свою уникальность.</p>
       </div>
+    </div>
+
+    <div class="individual-page__certificate certificate">
+      <img src="/img/ic-gift.svg" class="certificate__gift-icon">
+      <p class="certificate__description">В творческой мастерской можно приобрести подарочный сертификат.<br>Он может включать одно или несколько занятий и состоять из выбранных художественных направлений. Результатом занятия являются полученные знания, умения  и собственная работа.</p>
+      <img src="/img/certificate-v2.jpg" class="certificate__image">
     </div>
 
   </div>

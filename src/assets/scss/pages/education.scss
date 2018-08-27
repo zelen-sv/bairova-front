@@ -333,3 +333,27 @@
 .admission-page__main-info  {
 	margin: auto;
 }
+
+/*Certificate*/
+
+.certificate {
+	margin-bottom: 60px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.certificate__description {
+	margin: 0 auto 50px;
+	color: #746983;
+	width: 80%;
+	font-size: 18px;
+}
+
+.certificate__gift-icon {
+	width: 50px;
+	margin-bottom: 30px;
+}
+
+.certificate__image {
+	width: 100%;
+}
