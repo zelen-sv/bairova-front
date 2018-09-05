@@ -169,7 +169,7 @@
 }
 
 .request-button:disabled {
-	background-color: $grey;
+	background-color: darken(white, 25%);
 		&:hover {
 			cursor: not-allowed;
 			transform: none;

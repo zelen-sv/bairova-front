@@ -24,19 +24,15 @@
                 </div>
               </div>
             <div class="form-modal__field">
-              <div class="form-modal__field-label">Ваше имя:</div>
               <input class="form-modal__field-input" v-model="bid.name" type="text" placeholder="Имя">
             </div>
             <div class="form-modal__field">
-              <div class="form-modal__field-label">Номер телефона:</div>
               <input class="form-modal__field-input" v-model="bid.phone" type="text" placeholder="Номер телефона">
             </div>
             <div class="form-modal__field">
-              <div class="form-modal__field-label">Эл. почта:</div>
               <input class="form-modal__field-input" v-model="bid.email" type="text" placeholder="Эл. почта">
             </div>
             <div class="form-modal__field">
-              <div class="form-modal__field-label">Комментарий:</div>
               <textarea class="form-modal__field-input form-modal__field-input_textarea" v-model="bid.comment" placeholder="Комментарий"></textarea>
             </div>
             <div class="form-modal__button-container">

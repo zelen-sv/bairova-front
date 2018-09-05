@@ -1,31 +1,33 @@
 .form-modal {
-  width: 40%;
-  height: 90vh;
+  width: 550px;
+  height: 650px;
+  position: relative;
+  background: white;
+  background-image: url(/img/form-modal-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
   @media only screen and (max-width: 768px) {
     width: 100%;
     height: 100vh;
   }
-  @media only screen and (min-width: 768px) and (max-width: 1150px) {
-    width: 60%;
-  }
 }
 
 .form-modal__container {
-  background: white;
-  padding: 0 40px;
+  padding: 20px 40px;
+  width: auto;
+  text-align: center;
   @media only screen and (max-width: 768px) {
-    padding: 0 30px;
+    padding: 20px;
+  }
+  @media only screen and (max-width: 360px) {
+    padding: 10px 20px;
   }
 }
 
 .form-modal__legend {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
   color: $dark_pink;
-  padding: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
   @media only screen and (max-width: 768px) {
     font-size: 18px;
     line-height: 21px;
@@ -34,56 +36,52 @@
   }
   @media only screen and (min-width: 2150px) {
   }
+  @media only screen and (max-width: 360px) {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
 }
 
 .form-modal__radio-buttons {
-  margin-bottom: 15px;
-  font-size: 19px;
-  line-height: 21px;
+  font-size: 17px;
   color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+  margin: 0 auto 20px;
   @media only screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 16px;
+  }
+  @media only screen and (max-width: 360px) {
+    width: 90%;
+    margin-bottom: 0px;
   }
 }
 
 .form-modal__field {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.form-modal__field-label {
-  width: 30%;
-  font-size: 18px;
-  line-height: 21px;
-  color: $grey;
-  @media only screen and (max-width: 768px) {
-    display: none;
+  margin: 12px auto;
+  @media only screen and (max-width: 360px) {
+    margin: 7px;
   }
 }
 
 .form-modal__field-input {
-  width: 65%;
-  height: 45px;
-  border: 2px solid $light-grey;
+  width: 75%;
+  height: 40px;
+  border: 2px solid darken(white, 25%);
   border-radius: 5px;
   padding: 0px 10px;
   color: $grey;
+  font-size: 14px;
+  line-height: 16px;
+  &::-webkit-input-placeholder {
+    color: $placeholder;
+  }
   @media only screen and (max-width: 768px) {
-    width: 100%;
     font-size: 12px;
     line-height: 14px;
-    height: 30px;
-
-    &::-webkit-input-placeholder {
-      color: $placeholder;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1150px) {
-    font-size: 14px;
-    line-height: 16px;
   }
   @media only screen and (min-width: 1150px) {
     font-size: 16px;
@@ -93,6 +91,9 @@
       line-height: 18px;
     }
   }
+  @media only screen and (max-width: 360px) {
+    width: 90%;
+  }
 }
 
 .form-modal__field-input:focus {
@@ -100,20 +101,21 @@
 }
 
 .form-modal__field-input_textarea {
-  width: 65%;
-  height: 80px;
-  border: 2px solid $light-grey;
+  width: 75%;
+  height: 100px;
+  border: 2px solid darken(white, 25%);
   border-radius: 5px;
   padding: 0px 10px;
+  &::-webkit-input-placeholder {
+    color: $placeholder;
+  }
   @media only screen and (max-width: 768px) {
-    width: 100%;
     font-size: 12px;
     line-height: 14px;
     height: 60px;
-
-    &::-webkit-input-placeholder {
-      color: $placeholder;
-    }
+  }
+  @media only screen and (max-width: 360px) {
+    width: 90%;
   }
 }
 
@@ -128,7 +130,13 @@
   height: 58px;
   font-size: 17px;
   line-height: 20px;
-  margin: 30px 0;
+  margin: 20px 0;
+  @media only screen and (max-width: 360px) {
+    margin: 0;
+    height: 48px;
+    width: 230px;
+    font-size: 15px;
+  }
 }
 
 .form-modal_thanks {
