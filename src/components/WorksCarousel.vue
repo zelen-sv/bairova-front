@@ -11,11 +11,12 @@
 <script>
 import EventHub from '@/utils/event_hub'
 import PortfolioWork from '@/components/PortfolioWork'
+import StudentWork from '@/components/StudentWork'
 
 export default {
   name: 'WorksCarousel',
   components: {
-    PortfolioWork
+    PortfolioWork, StudentWork
   },
   data () {
     return {

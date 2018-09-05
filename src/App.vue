@@ -6,6 +6,7 @@
     <router-view/>
     <page-footer/>
     <works-carousel/>
+    <form-modal/>
   </div>
 </template>
 
@@ -16,10 +17,11 @@
   import Navbar  from '@/components/Navbar.vue'
   import PageFooter from '@/components/PageFooter.vue'
   import WorksCarousel from '@/components/WorksCarousel.vue'
+  import FormModal from '@/components/FormModal.vue'
 
 export default {
   components: {
-    MobMenu, PageHeader, Navbar, PageFooter, WorksCarousel
+    MobMenu, PageHeader, Navbar, PageFooter, WorksCarousel, FormModal
   }
 }
 </script>

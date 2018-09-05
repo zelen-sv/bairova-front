@@ -1,7 +1,7 @@
 // Variables
 @import "variables/colors";
 
-// Layout
+// Components
 @import "body";
 @import "layout";
 @import "header";
@@ -10,6 +10,9 @@
 @import "footer";
 @import "modal";
 @import "carousel";
+@import "form-modal";
+@import "radio-button";
+@import "cross";
 
 // Pages
 @import "pages/homepage-content";

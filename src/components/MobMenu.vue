@@ -1,28 +1,38 @@
 <template>
   <div class="mobmenu">
-    <button class="mobmenu__toggle"></button>
+    <button class="mobmenu__toggle" @click="toggleMenu"></button>
     <nav>
       <ul class="mobmenu_navigation">
         <router-link to="/" class="mobmenu__item" tag="li">
-          <span>Главная</span>
+          <span @click="toggleMenu">Главная</span>
         </router-link>
         <router-link to="/portfolio" class="mobmenu__item" tag="li">
-          <span>Портфолио</span>
+          <span @click="toggleMenu">Портфолио</span>
         </router-link>
         <router-link to="/education" class="mobmenu__item" tag="li">
-          <span>Обучение</span>
+          <span @click="toggleMenu">Обучение</span>
         </router-link>
-        <li class="mobmenu__item"><span href="#">О художнике</span></li>
-        <li class="mobmenu__item"><span href="#">Контакты</span></li>
-        <li class="mobmenu__item"><span href="#">События</span></li>
-        <li class="mobmenu__item"><button class="mobmenu__button request-button"><img src="img/ic-palette.svg">Заявка на обучение</button></li>
+        <li @click="toggleMenu" class="mobmenu__item"><span href="#">О художнике</span></li>
+        <li @click="toggleMenu" class="mobmenu__item"><span href="#">Контакты</span></li>
+        <li @click="toggleMenu" class="mobmenu__item"><span href="#">События</span></li>
+        <li @click="toggleMenu" class="mobmenu__item"><button class="mobmenu__button request-button" @click="openFormModal()"><img src="img/ic-palette.svg">Заявка на обучение</button></li>
       </ul>
     </nav>
   </div>
 </template>
 
 <script>
+  import EventHub from '@/utils/event_hub'
+
 export default {
-  name: 'MobMenu'
+  methods: {
+    openFormModal () {
+      EventHub.$emit('openFormModal');
+    },
+    toggleMenu () {
+      $('body').toggleClass('open');
+    }
+  }
 }
 </script>
+

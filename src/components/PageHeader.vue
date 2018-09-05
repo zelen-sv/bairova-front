@@ -16,7 +16,7 @@
           <a href="#" class="header__insta"><img src="/img/insta.svg"></a>
           <a href="#" class="header__fbook"><img src="/img/fbook.svg"></a>
         </div>
-        <button class="header__button request-button"><img src="/img/ic-palette.svg">Заявка на обучение</button>
+        <button class="header__button request-button" @click="openFormModal()"><img src="/img/ic-palette.svg">Заявка на обучение</button>
       </div>
 
     </div>
@@ -24,7 +24,14 @@
 </template>
 
 <script>
+  import EventHub from '@/utils/event_hub'
+
 export default {
-  name: 'PageHeader'
+  name: 'PageHeader',
+  methods: {
+    openFormModal () {
+      EventHub.$emit('openFormModal');
+    }
+  }
 }
 </script>

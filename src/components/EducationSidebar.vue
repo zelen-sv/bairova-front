@@ -14,6 +14,19 @@
         <a>Работы учеников</a>
       </router-link>
     </ul>
-    <button class="sidebar__button request-button"><img src="/img/ic-palette.svg">Заявка</button>
+    <button class="sidebar__button request-button" @click="openFormModal()"><img src="/img/ic-palette.svg">Заявка</button>
   </div>
 </template>
+
+<script>
+  import EventHub from '@/utils/event_hub'
+
+export default {
+  name: 'PageHeader',
+  methods: {
+    openFormModal () {
+      EventHub.$emit('openFormModal');
+    }
+  }
+}
+</script>

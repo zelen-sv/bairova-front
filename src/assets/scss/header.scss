@@ -168,6 +168,19 @@
 	}
 }
 
+.request-button:disabled {
+	background-color: $grey;
+		&:hover {
+			cursor: not-allowed;
+			transform: none;
+		}
+}
+
+.request-button:focus {
+	outline: none;
+}
+
+
 /*header-animation*/
 
 .header__keyvisual {
