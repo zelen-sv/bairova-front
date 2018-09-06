@@ -12,8 +12,12 @@
         <router-link to="/education" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">Обучение</span>
         </router-link>
-        <li @click="toggleMenu" class="mobmenu__item"><span href="#">О художнике</span></li>
-        <li @click="toggleMenu" class="mobmenu__item"><span href="#">Контакты</span></li>
+        <router-link to="/about-me" class="mobmenu__item" tag="li">
+          <span @click="toggleMenu">О художнике</span>
+        </router-link>
+        <router-link to="/contacts" class="mobmenu__item" tag="li">
+          <span @click="toggleMenu">Контакты</span>
+        </router-link>
         <li @click="toggleMenu" class="mobmenu__item"><span href="#">События</span></li>
         <li @click="toggleMenu" class="mobmenu__item"><button class="mobmenu__button request-button" @click="openFormModal()"><img src="img/ic-palette.svg">Заявка на обучение</button></li>
       </ul>

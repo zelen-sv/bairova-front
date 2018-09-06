@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Portfolio from './views/Portfolio.vue'
 import Education from './views/Education.vue'
+import AboutMe from './views/AboutMe.vue'
+import Contacts from './views/Contacts.vue'
 
 import PortfolioWorks from './components/PortfolioWorks.vue'
 
@@ -68,6 +70,16 @@ export default new Router({
           component: StudentWorks,
           name: 'student_works' },
       ]
+    },
+    {
+      path: '/about-me',
+      name: 'about-me',
+      component: AboutMe
+    },
+    {
+      path: '/contacts',
+      name: 'contacts',
+      component: Contacts
     }
   ],
   scrollBehavior (to, from, savedPosition) {

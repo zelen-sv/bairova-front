@@ -24,10 +24,10 @@
                 </div>
               </div>
             <div class="form-modal__field">
-              <input class="form-modal__field-input" v-model="bid.name" type="text" placeholder="Имя">
+              <input class="form-modal__field-input" v-model="bid.name" type="text" placeholder="Имя , обязательно">
             </div>
             <div class="form-modal__field">
-              <input class="form-modal__field-input" v-model="bid.phone" type="text" placeholder="Номер телефона">
+              <masked-input type="tel" class="form-modal__field-input" v-model="bid.phone" mask="\+\375 (11) 111-11-11" placeholder="Номер телефона, обязательно" />
             </div>
             <div class="form-modal__field">
               <input class="form-modal__field-input" v-model="bid.email" type="text" placeholder="Эл. почта">
@@ -56,9 +56,13 @@
 
 <script>
 import EventHub from '@/utils/event_hub'
+import MaskedInput from 'vue-masked-input'
 import request from '@/utils/axios_request'
 
 export default {
+  components: {
+    MaskedInput
+  },
   data () {
     return {
       bid: {
@@ -93,6 +97,9 @@ export default {
     },
     'bid.comment' () {
       this.updateButton()
+    },
+    visible () {
+      this.changeModalState()
     }
   },
   methods: {
@@ -115,6 +122,10 @@ export default {
         this.findCheckbox(name).classList.remove('checked')
       });
     },
+    changeModalState () {
+      let body  = document.getElementsByTagName('body')[0]
+      this.visible ? body.classList.add("disable-scroll-modal") : body.classList.remove("disable-scroll-modal")
+    },
     findCheckbox (name) {
       return document.getElementById(name)
     },
@@ -127,13 +138,15 @@ export default {
       this.isFormValid() ? this.active_button = true : this.active_button = false
     },
     isFormValid () {
-      let bid = this.bid,
-          empty_fields = Object.values(bid).filter(field => field != false);
-      if (empty_fields.length == 5) {
+      let bid = this.bid;
+      if (bid.name != '' && this.phoneValid(bid.phone) ) {
         return true
       } else {
         return false
       }
+    },
+    phoneValid (phone) {
+      return (!phone.includes('_') && phone != '')
     },
     resetAllFields () {
       this.resetAllCheckboxes()
