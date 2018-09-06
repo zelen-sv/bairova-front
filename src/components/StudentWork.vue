@@ -5,7 +5,7 @@
       <div class="carousel__image-container">
         <img :src="work.picture.url" class="carousel__image"/>
       </div>
-    	<div class="carousel__buttons-container">
+      <div class="carousel__buttons-container">
         <div class="carousel__buttons">
           <button @click="$emit('previus')" class="carousel__button carousel__button-prev">
           </button>
@@ -16,8 +16,8 @@
     </div>
 
     <div class="carousel__info-part">
-    	<p class="carousel__title"><img src="/img/dot.svg" class="carousel__dot">{{ work.title }}<img src="/img/dot.svg" class="carousel__dot"></p>
-    	<p class="carousel__technique">{{ work.technique }}</p>
+      <p class="carousel__title"><img src="/img/dot.svg" class="carousel__dot">{{ work.title }}<img src="/img/dot.svg" class="carousel__dot"></p>
+      <p class="carousel__technique">{{ work.technique }}</p>
     </div>
 
   </div>
@@ -25,7 +25,6 @@
 
 <script>
 export default {
-  name: 'PortfolioWork',
   props: ['work']
 }
 </script>

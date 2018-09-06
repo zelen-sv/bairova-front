@@ -3,8 +3,15 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Portfolio from './views/Portfolio.vue'
 import Education from './views/Education.vue'
+import AboutMe from './views/AboutMe.vue'
+import Contacts from './views/Contacts.vue'
 
 import PortfolioWorks from './components/PortfolioWorks.vue'
+
+import IndividualLessons from './components/IndividualLessons.vue'
+import StudioFloria from './components/StudioFloria.vue'
+import Admission from './components/Admission.vue'
+import StudentWorks from './components/StudentWorks.vue'
 
 Vue.use(Router)
 
@@ -48,8 +55,40 @@ export default new Router({
     },
     {
       path: '/education',
-      name: 'education',
-      component: Education
+      component: Education,
+      children: [
+        { path: '',
+          component: IndividualLessons,
+          name: 'individual_lessons' },
+        { path: 'studio_floria',
+          component: StudioFloria,
+          name: 'studio_floria' },
+        { path: 'admission',
+          component: Admission,
+          name: 'admission' },
+        { path: 'student_works',
+          component: StudentWorks,
+          name: 'student_works' },
+      ]
+    },
+    {
+      path: '/about-me',
+      name: 'about-me',
+      component: AboutMe
+    },
+    {
+      path: '/contacts',
+      name: 'contacts',
+      component: Contacts
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      return {selector: to.hash}
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })

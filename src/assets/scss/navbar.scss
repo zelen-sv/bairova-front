@@ -2,23 +2,13 @@
 	overflow: hidden;
 	background-color: #FFF;
 	z-index: 200;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	border-bottom: 1px solid rgba($violet, 0.3);
+	transition: border-bottom 0.5s ease;
 	@media only screen and (max-width: 768px) {
 		display: none;
-	}
-}
-
-.sticky {
-	position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: 1px solid rgba($violet, 0.3);
-  transition: border-bottom 0.5s ease;
-}
-
-.sticky + .homepage-content {
-  padding-top: 184px;
-  @media only screen and (max-width: 768px) {
-		padding-top: 60px;
 	}
 }
 

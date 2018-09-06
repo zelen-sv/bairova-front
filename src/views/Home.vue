@@ -4,51 +4,51 @@
 	  <div class="homepage-content__wrapper">
 
 	    <div class="homepage-content__line">
-	      <a href="#" class="homepage-content__item homepage-content__item--batik">
-	        <div class="homepage-content__item-details">
-	          <span class="homepage-content__item-header">Батик</span>
-	          <span class="homepage-content__item-text">ручная роспись по ткани</span>
-	        </div>
-	      </a>
-	      <a href="#" class="homepage-content__item homepage-content__item--graphic">
+	    	<router-link to="/portfolio#portfolio-content" class="homepage-content__item homepage-content__item--batik">
+	    		<div class="homepage-content__item-details">
+	    		  <span class="homepage-content__item-header">Батик</span>
+	    		  <span class="homepage-content__item-text">ручная роспись по ткани</span>
+	    		</div>
+	    	</router-link>
+	      <router-link to="/portfolio/graphic_arts#portfolio-content" class="homepage-content__item homepage-content__item--graphic">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Графика</span>
 	        </div>
-	      </a>
+	      </router-link>
 	    </div>
 
 	    <div class="homepage-content__line homepage-content__line--second">
-	      <a href="#" class="homepage-content__item homepage-content__item--academic">
+	    	<router-link to="/education/admission#education-content" class="homepage-content__item homepage-content__item--academic">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Рисунок</span>
 	          <span class="homepage-content__item-text">подготовка к поступлению</span>
 	        </div>
-	      </a>
-	      <a href="#" class="homepage-content__item homepage-content__item--pupil">
+	      </router-link>
+	      <router-link to="/education/student_works#education-content" class="homepage-content__item homepage-content__item--pupil">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Ученики</span>
 	        </div>
-	      </a>
-	      <a href="#" class="homepage-content__item homepage-content__item--oil">
+	      </router-link>
+	      <router-link to="/portfolio/painting#portfolio-content" class="homepage-content__item homepage-content__item--oil">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Живопись</span>
 	          <span class="homepage-content__item-text">масло, акрил, темпера</span>
 	        </div>
-	      </a>
+	      </router-link>
 	    </div>
 
 	    <div class="homepage-content__line">
-	      <a href="#" class="homepage-content__item homepage-content__item--painting">
+	    	<router-link to="/portfolio#portfolio-content" class="homepage-content__item homepage-content__item--painting">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Галерея работ</span>
 	        </div>
-	      </a>
-	      <a href="#" class="homepage-content__item homepage-content__item--teaching">
+	      </router-link>
+	      <router-link to="/education#education-content" class="homepage-content__item homepage-content__item--teaching">
 	        <div class="homepage-content__item-details">
 	          <span class="homepage-content__item-header">Обучение</span>
 	          <span class="homepage-content__item-text">взрослые и дети</span>
 	        </div>
-	      </a>
+	      </router-link>
 	    </div>
 
 	    <div class="homepage-content__poem">

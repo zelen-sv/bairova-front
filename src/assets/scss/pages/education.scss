@@ -1,0 +1,359 @@
+
+/*Common*/
+
+.education-content {
+	background: linear-gradient(#F6F3F7, #FFF, #FFF);
+	position: relative;
+	@media only screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+}
+
+.education-content__wrapper {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 1150px) {
+		width: 1000px;
+	}
+	@media only screen and (min-width: 2150px) {
+		width: 1250px;
+	}
+}
+
+.main-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	@media only screen and (min-width: 1250px) {
+		width: 1250px;
+	}
+	@media only screen and (min-width: 2150px) {
+		width: 1550px;
+	}
+}
+
+.education-content__sidebar {
+	padding: 120px 0;
+	display: flex;
+	flex-direction: column;
+	@media only screen and (max-width: 768px) {
+		padding: 40px 0;
+	}
+}
+
+.education-content__information {
+	padding: 120px 0 0 40px;
+  width: 75%;
+  @media only screen and (max-width: 768px) {
+  	padding: 0;
+  	width: 100%;
+  }
+}
+
+.ed-introduction {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	margin-bottom: 60px;
+	@media only screen and (max-width: 1024px) {
+		flex-direction: column;
+	}
+}
+
+.ed-main-image {
+	padding: 0 15px;
+	background-size: cover;
+	background-position: center;
+	width: 45%;
+	@media only screen and (max-width: 1024px) {
+		width: 40%;
+		margin: 0 auto 40px;
+		height: 300px;
+	}
+	@media only screen and (max-width: 500px) {
+		width: 50%;
+	}
+}
+
+.ed-main-info {
+	text-align: center;
+	padding: 0 15px 0 0;
+	width: 55%;
+	color: #746983;
+	@media only screen and (max-width: 1024px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	@media only screen and (min-width: 2150px) {
+		font-size: 19px;
+	}
+	@media only screen and (max-width: 768px) {
+  	font-size: 19px;
+  }
+}
+
+.ed-text {
+	p {
+		margin: 0 0 15px 0;
+	}
+	img {
+		opacity: 0.8;
+	}
+}
+
+/*Artblock*/
+
+.artblock {
+	border: 1px solid rgba(#746983, 0.3);
+	height: 225px;
+	margin-bottom: 60px;
+	display: flex;
+	@media only screen and (max-width: 1150px) {
+  	height: auto;
+  	flex-direction: column;
+  }
+  @media only screen and (min-width: 2150px) {
+		height: 300px;
+	}
+}
+
+.artblock__image {
+	width: 225px;
+	background-size: cover;
+	flex-shrink: 0;
+	@media only screen and (max-width: 1150px) {
+  	height: 225px;
+  	align-self: center;
+  	margin-top: 20px;
+  }
+  @media only screen and (min-width: 2150px) {
+		width: 300px;
+	}
+}
+
+.artblock__description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 30px 0;
+	text-align: center;
+	@media only screen and (min-width: 2150px) {
+		padding: 40px 60px 0;
+	}
+}
+
+.artblock__text {
+	color: #746983;
+	@media only screen and (min-width: 2150px) {
+		font-size: 18px;
+		margin: auto 0;
+	}
+}
+
+/*Art-types*/
+
+.art-types {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 13px;
+}
+
+.art-types__header {
+	color: $accent;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.art-types__list {
+	list-style-type: disc;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.art-types__list-item {
+	margin-top: 10px;
+	white-space: nowrap;
+}
+
+/*Individual page*/
+
+.individual-page__block {
+	flex-wrap: nowrap;
+	@media only screen and (max-width: 1150px) {
+		border: none;
+	}
+}
+
+.individual-page__main-image {
+	background-image: url(/img/individual-main-image.jpg);
+}
+
+.individual-page__firstblock .artblock__image {
+	background-image: url(/img/composition.jpg);
+}
+
+.individual-page__secondblock .artblock__image {
+	background-image: url(/img/academ.jpg);
+}
+
+.individual-page__thirdblock .artblock__image {
+	background-image: url(/img/painting.jpg);
+}
+
+.individual-page__fourthblock .artblock__image {
+	background-image: url(/img/homepage-free.jpg);
+}
+
+.individual-page__fifthblock .artblock__image {
+	background-image: url(/img/batik.jpg);
+}
+
+.individual-page__sixthblock .artblock__image {
+	background-image: url(/img/therapy.jpg);
+}
+
+.individual-page__seventhblock .artblock__image {
+	background-image: url(/img/intuition.jpg);
+}
+
+.individual-page__text-bonus {
+	font-weight: 600;
+}
+
+/*StudioFloria*/
+
+.floria-page__main-image {
+	background-image: url(/img/floria.jpg);
+}
+
+.floria-page__address {
+	padding-bottom: 15px;
+	font-weight: 600;
+	img {
+		margin: 0 8px 0 0;
+	}
+}
+
+.floria-page__money {
+	font-weight: 600;
+}
+
+.floria-page__schedule {
+	background-image: url(/img/floria-background.png);
+	background-position: top left;
+	background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #746983;
+  @media only screen and (max-width: 768px) {
+		padding: 0 15px;
+	}
+}
+
+.floria-page__registration-info {
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	p {
+		margin: 0;
+	}
+	@media only screen and (min-width: 2150px) {
+		font-size: 20px;
+	}
+}
+
+.floria-page__day-blocks {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 30px;
+	@media only screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-top: 15px;
+		margin-bottom: 45px;
+	}
+}
+
+.floria-page__day-block {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	color: $violet;
+	font-size: 17px;
+	margin: 0 15px;
+	@media only screen and (max-width: 865px) {
+		margin: 0 5px;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-top: 20px;
+		font-size: 21px;
+	}
+	@media only screen and (min-width: 2150px) {
+		font-size: 22px;
+	}
+}
+
+.floria-page__day {
+	background-color: $accent;
+	padding: 13px;
+	border-radius: 50%;
+	text-transform: uppercase;
+	margin-right: 6px;
+	@media only screen and (min-width: 2150px) {
+		padding: 20px;
+	}
+}
+
+/*Admission*/
+
+.admission-page__main-image {
+	background-image: url(/img/admission-main-image.jpg);
+	@media only screen and (min-width: 1024px) {
+		height: 500px;
+	}
+}
+
+.admission-page__main-info  {
+	margin: auto;
+}
+
+/*Certificate*/
+
+.certificate {
+	margin-bottom: 60px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.certificate__description {
+	margin: 0 auto 50px;
+	color: #746983;
+	width: 80%;
+	font-size: 18px;
+}
+
+.certificate__gift-icon {
+	width: 50px;
+	margin-bottom: 30px;
+}
+
+.certificate__image {
+	width: 100%;
+}

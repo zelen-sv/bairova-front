@@ -1,9 +1,9 @@
 <template>
   <transition name="modal-fade" v-if="visible">
     <div class="modal-backdrop" role="dialog" @click.self.prevent="close">
-      <div class="modal" ref="modal">
+      <v-touch class="modal" ref="modal" @swipeleft="previus" @swiperight="next">
         <component :is="component" :work="currentWork" @next="next" @previus="previus"></component>
-      </div>
+      </v-touch>
     </div>
   </transition>
 </template>
@@ -11,11 +11,12 @@
 <script>
 import EventHub from '@/utils/event_hub'
 import PortfolioWork from '@/components/PortfolioWork'
+import StudentWork from '@/components/StudentWork'
 
 export default {
   name: 'WorksCarousel',
   components: {
-    PortfolioWork
+    PortfolioWork, StudentWork
   },
   data () {
     return {
@@ -40,8 +41,8 @@ export default {
   },
   watch: {
     visible () {
-      let body  = document.getElementsByTagName('body')[0]
-      this.visible ? body.classList.add("disable-scroll-modal") : body.classList.remove("disable-scroll-modal")
+      this.changeModalState()
+      this.resetEventListener()
     }
   },
   methods: {
@@ -67,6 +68,26 @@ export default {
     },
     activateWork(workIndex) {
         this.activeWork = workIndex
+    },
+    changeModalState () {
+      let body  = document.getElementsByTagName('body')[0]
+      this.visible ? body.classList.add("disable-scroll-modal") : body.classList.remove("disable-scroll-modal")
+    },
+    resetEventListener () {
+      this.visible ? this.addKeyListener() : this.removeKeyListener()
+    },
+    addKeyListener () {
+      window.addEventListener('keydown', this.keyboardControls, false)
+    },
+    removeKeyListener () {
+      window.removeEventListener('keydown', this.keyboardControls, false)
+    },
+    keyboardControls (e) {
+      if (e.keyCode == 37) {
+        this.previus()
+      } else if (e.keyCode == 39) {
+        this.next()
+      }
     }
   }
 }

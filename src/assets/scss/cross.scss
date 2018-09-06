@@ -1,0 +1,26 @@
+.cross {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  opacity: 0.3;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.cross:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.cross:before, .cross:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: $violet;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
