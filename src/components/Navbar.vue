@@ -12,7 +12,7 @@
         <router-link to="/education#education-content" tag="li" class="navbar__item">
           <a>Обучение</a>
         </router-link>
-        <router-link to="/about-me" tag="li" class="navbar__item">
+        <router-link to="/about-me#about-me" tag="li" class="navbar__item">
           <a>О художнике</a>
         </router-link>
         <router-link to="/contacts" tag="li" class="navbar__item">
