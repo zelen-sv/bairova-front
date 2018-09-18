@@ -3,15 +3,17 @@
     <div class="portfolio__spinner" v-show="loading">
       <bounce-loader :loading="loading" :color="spinner_color"></bounce-loader>
     </div>
-    <transition-group name="work-fade">
-      <div v-show="!loading"
-           v-for="(work, index) in works"
-           :key="work.id"
-           @click="openWorksCarausel(index);"
-           :style="{ backgroundImage: `url(${work.picture.url})` }"
-           class="gallery__item">
+    <transition name="work-fade">
+      <div class="gallery" v-show="!loading">
+        <div class="gallery__item" v-for="(work, index) in works" :key="work.id" @click="openWorksCarausel(index)">
+          <progressive-background
+            :src="work.picture.url"
+            :placeholder="work.picture.placeholder.url"
+            :blur="30"
+          />
+        </div>
       </div>
-    </transition-group>
+    </transition>
   </div>
 </template>
 
