@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "images-loaded": "^1.0.0",
     "vue": "^2.5.16",
     "vue-affix": "^0.2.4",
     "vue-icon": "^2.0.0",

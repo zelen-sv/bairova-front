@@ -3,7 +3,7 @@
     <main-spinner v-show="spinner"/>
     <div class="data" v-show="!spinner">
       <mob-menu/>
-      <page-header/>
+      <page-header @appLoaded="appLoaded"/>
       <navbar/>
       <router-view/>
       <page-footer/>
@@ -32,8 +32,10 @@ export default {
   components: {
     MobMenu, PageHeader, Navbar, PageFooter, WorksCarousel, FormModal, MainSpinner
   },
-  mounted () {
-    this.spinner = false
+  methods: {
+    appLoaded () {
+      this.spinner = false
+    }
   }
 }
 </script>
