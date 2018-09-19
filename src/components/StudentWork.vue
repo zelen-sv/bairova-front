@@ -1,5 +1,6 @@
 <template>
   <div class="carousel">
+    <div @click.self.prevent="close" class="modal__cross cross"></div>
 
     <div class="carousel__image-part">
       <img :src="work.picture.url" class="carousel__image"/>
@@ -29,6 +30,11 @@
 
 <script>
 export default {
-  props: ['work']
+  props: ['work'],
+  methods: {
+    close () {
+      this.$emit('close')
+    }
+  }
 }
 </script>

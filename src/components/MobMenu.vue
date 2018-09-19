@@ -6,16 +6,16 @@
         <router-link to="/" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">Главная</span>
         </router-link>
-        <router-link to="/portfolio" class="mobmenu__item" tag="li">
+        <router-link to="/portfolio#portfolio-content" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">Портфолио</span>
         </router-link>
-        <router-link to="/education" class="mobmenu__item" tag="li">
+        <router-link to="/education#education-content" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">Обучение</span>
         </router-link>
-        <router-link to="/about-me" class="mobmenu__item" tag="li">
+        <router-link to="/about-me#about-me" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">О художнике</span>
         </router-link>
-        <router-link to="/contacts" class="mobmenu__item" tag="li">
+        <router-link to="/contacts#contacts" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">Контакты</span>
         </router-link>
         <li @click="toggleMenu" class="mobmenu__item"><span href="#">События</span></li>
@@ -35,6 +35,7 @@ export default {
     },
     toggleMenu () {
       $('body').toggleClass('open');
+      $('body').toggleClass('disable-scroll-modal');
     }
   }
 }

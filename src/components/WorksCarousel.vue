@@ -1,8 +1,8 @@
 <template>
   <transition name="modal-fade" v-if="visible">
     <div class="modal-backdrop" role="dialog" @click.self.prevent="close">
-      <v-touch class="modal" ref="modal" @swipeleft="previus" @swiperight="next">
-        <component :is="component" :work="currentWork" @next="next" @previus="previus"></component>
+      <v-touch class="modal modal_carousel" ref="modal" @swipeleft="previus" @swiperight="next">
+        <component :is="component" :work="currentWork" @next="next" @previus="previus" @close="close"></component>
       </v-touch>
     </div>
   </transition>
