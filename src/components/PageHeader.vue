@@ -24,14 +24,17 @@
 </template>
 
 <script>
+  import imagesLoaded from 'imagesloaded'
   import EventHub from '@/utils/event_hub'
 
 export default {
   name: 'PageHeader',
-  methods: {
-    openFormModal () {
-      EventHub.$emit('openFormModal');
-    }
+  mounted () {
+    imagesLoaded( '.header__keyvisual', {
+      background: true
+    }, ( imgLoad ) => {
+      this.$emit('appLoaded')
+    })
   }
 }
 </script>
