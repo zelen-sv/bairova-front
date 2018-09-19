@@ -35,6 +35,11 @@ export default {
     }, ( imgLoad ) => {
       this.$emit('appLoaded')
     })
+  },
+  methods: {
+    openFormModal () {
+      EventHub.$emit('openFormModal');
+    }
   }
 }
 </script>

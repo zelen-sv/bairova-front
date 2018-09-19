@@ -15,7 +15,7 @@
         <router-link to="/about-me#about-me" tag="li" class="navbar__item">
           <a>О художнике</a>
         </router-link>
-        <router-link to="/contacts" tag="li" class="navbar__item">
+        <router-link to="/contacts#contacts" tag="li" class="navbar__item">
           <a>Контакты</a>
         </router-link>
         <li class="navbar__item"><a href="#">События</a></li>
