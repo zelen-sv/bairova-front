@@ -24,13 +24,15 @@
 </template>
 
 <script>
-  import imagesLoaded from 'images-loaded'
+  import imagesLoaded from 'imagesloaded'
   import EventHub from '@/utils/event_hub'
 
 export default {
   name: 'PageHeader',
   mounted () {
-    imagesLoaded('.header__keyvisual').then(elements => {
+    imagesLoaded( '.header__keyvisual', {
+      background: true
+    }, ( imgLoad ) => {
       this.$emit('appLoaded')
     })
   }
