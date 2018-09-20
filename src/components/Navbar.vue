@@ -18,7 +18,9 @@
         <router-link to="/contacts#contacts" tag="li" class="navbar__item">
           <a>Контакты</a>
         </router-link>
-        <li class="navbar__item"><a href="#">События</a></li>
+        <router-link to="/events#events" tag="li" class="navbar__item">
+          <a>События</a>
+        </router-link>
       </ul>
 
     </div>

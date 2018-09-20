@@ -5,6 +5,7 @@ import Portfolio from './views/Portfolio.vue'
 import Education from './views/Education.vue'
 import AboutMe from './views/AboutMe.vue'
 import Contacts from './views/Contacts.vue'
+import Events from './views/Events.vue'
 import Error404 from './views/Error404.vue'
 
 import PortfolioWorks from './components/PortfolioWorks.vue'
@@ -81,6 +82,11 @@ export default new Router({
       path: '/contacts',
       name: 'contacts',
       component: Contacts
+    },
+    {
+      path: '/events',
+      name: 'events',
+      component: Events
     },
     { path: '*', component: Error404 }
   ],
