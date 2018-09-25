@@ -33,7 +33,7 @@
       <table border="0" cellpadding="0" cellspacing="0" width="100%" class="footer__developer-table">
         <tr>
           <td width="35%"><hr></td>
-          <td width="20%" class="footer__developer-text">Разработка сайта <a href="https://www.instagram.com/lemari.studio/" target="_blank" class="footer__developer-link">LEMARI</a></td>
+          <td width="20%" class="footer__developer-text">Разработка сайта <a href="https://www.instagram.com/lemari_design/" target="_blank" class="footer__developer-link">LEMARI</a></td>
           <td width="35%"><hr></td>
         </tr>
       </table>
