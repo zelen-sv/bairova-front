@@ -2,7 +2,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: end;
+	@media only screen and (max-width: 1084px) {
+		justify-content: space-evenly;
+	}
 }
 
 .gallery__item {
@@ -78,6 +81,10 @@
   @media only screen and (max-width: 768px) {
 		display: none;
 	}
+}
+
+.sidebar__button:hover {
+	box-shadow: none;
 }
 
 .main-spinner {
