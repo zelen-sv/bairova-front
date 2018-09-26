@@ -8,7 +8,11 @@
 
     <div class="carousel__info-part">
       <div class="carousel__info-up">
-        <p class="carousel__title"><img src="/img/yellow-dot.svg" class="carousel__dot">{{ work.title }}<img src="/img/yellow-dot.svg" class="carousel__dot"></p>
+        <div class="carousel__title-container" style="display: flex;">
+          <img src="/img/yellow-dot.svg" class="carousel__dot">
+          <p class="carousel__title">{{ work.title }}</p>
+          <img src="/img/yellow-dot.svg" class="carousel__dot">
+        </div>
         <p class="carousel__author">{{ work.author }}</p>
       </div>
 

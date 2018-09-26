@@ -99,10 +99,14 @@
   }
 }
 
+.carousel__title-container {
+  display: flex;
+  align-items: end;
+}
+
 .carousel__title {
 	font-size: 19px;
   color: $dark_pink;
-  white-space: nowrap;
 	@media only screen and (min-width: 2150px){
     font-size: 22px;
   }
