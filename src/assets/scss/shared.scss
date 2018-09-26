@@ -14,6 +14,14 @@
 	display: block;
 	margin: 20px;
 	margin-top: 0;
+	opacity: 0.8;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+		-webkit-filter: brightness(110%);
+		transition: all 1s ease;
+	}
 }
 
 .sidebar {
