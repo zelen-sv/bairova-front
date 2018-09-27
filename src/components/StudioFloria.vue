@@ -32,15 +32,15 @@
 			<div class="floria-page__day-blocks">
 				<div class="floria-page__day-block">
 					<span class="floria-page__day">Вт</span>
-					<p class="floria-page__time">18:00 - 20:30</p>
+					<p class="floria-page__time">16:00 - 18:45</p>
 				</div>
 				<div class="floria-page__day-block">
-					<span class="floria-page__day">Вт</span>
-					<p class="floria-page__time">18:00 - 20:30</p>
+					<span class="floria-page__day">Ср</span>
+					<p class="floria-page__time">17:00 - 19:45</p>
 				</div>
 				<div class="floria-page__day-block">
-					<span class="floria-page__day">Вт</span>
-					<p class="floria-page__time">18:00 - 20:30</p>
+					<span class="floria-page__day">Чт</span>
+					<p class="floria-page__time">17:00 - 19:45</p>
 				</div>
 			</div>
 		</div>

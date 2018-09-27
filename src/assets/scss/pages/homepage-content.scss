@@ -177,7 +177,7 @@
 
 .homepage-content__item--oil {
 	flex-grow: 2;
-	background-image: url(../public/img/homepage-oil2.jpg);
+	background-image: url(../public/img/homepage-oil.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}
@@ -185,7 +185,7 @@
 
 .homepage-content__item--painting {
 	flex-grow: 1;
-	background-image: url(../public/img/homepage-oil3.jpg);
+	background-image: url(../public/img/homepage-gallery.jpg);
 	@media only screen and (max-width: 768px) {
 		display: none;
 	}
@@ -193,7 +193,7 @@
 
 .homepage-content__item--teaching {
 	flex-grow: 1;
-	background-image: url(../public/img/homepage-study.jpg);
+	background-image: url(../public/img/painting.jpg);
 	@media only screen and (max-width: 768px) {
 		flex-grow: 0;
 	}

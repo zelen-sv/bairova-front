@@ -21,7 +21,7 @@
         <router-link to="/events#events" class="mobmenu__item" tag="li">
           <span @click="toggleMenu">События</span>
         </router-link>
-        <li @click="toggleMenu" class="mobmenu__item"><button class="mobmenu__button request-button" @click="openFormModal()"><img src="img/ic-palette.svg">Заявка на обучение</button></li>
+        <li @click="toggleMenu" class="mobmenu__item"><button class="mobmenu__button request-button" @click="openFormModal()"><img src="/img/ic-palette.svg">Заявка на обучение</button></li>
       </ul>
     </nav>
   </div>
