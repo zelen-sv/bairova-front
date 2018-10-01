@@ -113,6 +113,10 @@ $color-lite: lighten($color, 10%);
   color: $accent;
 }
 
+.mobmenu_navigation .router-link-active span {
+  color: $accent;
+}
+
 .mobmenu__button {
   margin-top: 30px;
   padding: 15px 20px;

@@ -24,8 +24,8 @@
       <img src="/img/element01_top.svg">
       <p>О возможности приобретения картин можно узнать по:</p>
       <div class="portfolio-content__contacts-info">
-        <div class="portfolio-content__phone"><img src="/img/phone.svg"><p>+375 29 509 10 17</p></div>
-        <div class="portfolio-content__mail"><img src="/img/mail.svg"><p>degtyar.ana@mail.ru</p></div>
+        <div class="portfolio-content__phone"><img src="/img/phone.svg"><p>+375 29 365 21 10</p></div>
+        <div class="portfolio-content__mail"><img src="/img/mail.svg"><p>bairova.info@mail.ru</p></div>
       </div>
       <img src="/img/element01_bottom.svg">
     </div>

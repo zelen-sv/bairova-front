@@ -3,7 +3,7 @@
     <button class="mobmenu__toggle" @click="toggleMenu"></button>
     <nav>
       <ul class="mobmenu_navigation">
-        <router-link to="/" class="mobmenu__item" tag="li">
+        <router-link to="/" class="mobmenu__item" tag="li" exact>
           <span @click="toggleMenu">Главная</span>
         </router-link>
         <router-link to="/portfolio#portfolio-content" class="mobmenu__item" tag="li">
