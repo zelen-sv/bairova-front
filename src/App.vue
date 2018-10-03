@@ -36,21 +36,6 @@ export default {
     appLoaded () {
       this.spinner = false
     }
-  },
-  metaInfo: {
-    title: 'Людмила Баирова художник, учитель, дизайнер',
-    meta: [
-      {'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {name: 'description', content: 'Художник, учитель, дизайнер Людмила Баирова. Обучение детей и взрослых.'},
-
-      {property: 'og:title', content: 'Художник, учитель, дизайнер Людмила Баирова. Обучение детей и взрослых.'},
-      {property: 'og:url', content: 'http://bairova.by'},
-      {property: 'og:image', content: '/img/social-bird.png'}
-    ],
-    links: [
-      {rel: 'canonical', href: 'http://bairova.by'}
-    ]
   }
 }
 </script>

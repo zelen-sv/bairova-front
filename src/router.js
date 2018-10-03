@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Meta from 'vue-meta'
 import Home from './views/Home.vue'
 import Portfolio from './views/Portfolio.vue'
 import Education from './views/Education.vue'
@@ -17,7 +16,6 @@ import Admission from './components/Admission.vue'
 import StudentWorks from './components/StudentWorks.vue'
 
 Vue.use(Router)
-Vue.use(Meta)
 
 export default new Router({
   mode: 'history',
