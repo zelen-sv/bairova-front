@@ -14,7 +14,7 @@
         <div class="header__social">
           <a href="https://vk.com/id176716374" target="_blank" class="header__vk"><img src="/img/vk.svg"></a>
           <a href="https://www.instagram.com/milabairova/" target="_blank" class="header__insta"><img src="/img/insta.svg"></a>
-          <a href="https://www.facebook.com/bair.taurus" target="_blank" class="header__fbook"><img src="/img/fbook.svg"></a>
+          <a href="https://www.youtube.com/channel/UCKMJOxjADLd4wwWimVqhHPg" target="_blank" class="header__youtube"><img src="/img/youtube.svg"></a>
         </div>
         <button class="header__button request-button" @click="openFormModal()"><img src="/img/ic-palette.svg">Заявка на обучение</button>
       </div>

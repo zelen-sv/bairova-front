@@ -21,7 +21,7 @@
           <div class="footer__social">
             <a href="https://vk.com/id176716374" target="_blank"><img src="/img/vk-footer.svg"></a>
             <a href="https://www.instagram.com/milabairova/" target="_blank"><img src="/img/insta-footer.svg"></a>
-            <a href="https://www.facebook.com/bair.taurus" target="_blank"><img src="/img/fbook-footer.svg"></a></div>
+            <a href="https://www.youtube.com/channel/UCKMJOxjADLd4wwWimVqhHPg" target="_blank"><img src="/img/youtube-footer.svg"></a></div>
         </div>
       </div>
 
